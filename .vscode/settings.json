@@ -108,8 +108,9 @@
   },
   "solidity.compileUsingRemoteVersion": "v0.6.10+commit.00c0fcaf",
   "search.exclude": {
+    "**/.pnp.*": true,
     "**/.yarn": true,
-    "**/.pnp.*": true
+    "**/node_modules": false
   },
   "typescript.tsdk": "yarn-project/.yarn/sdks/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,

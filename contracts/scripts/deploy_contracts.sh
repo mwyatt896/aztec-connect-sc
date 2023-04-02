@@ -33,7 +33,7 @@ UPGRADE=${UPGRADE:=true}
 echo "Deploying contracts from: $DEPLOYER_ADDRESS"
 
 # Execute deployment solidity script
-forge script E2ESetup --ffi --private-key $PRIVATE_KEY --broadcast --rpc-url $ETHEREUM_HOST --sig "deploy(address,address,address,address,string,bool)" \
+forge script E2ESetup --ffi --legacy --private-key $PRIVATE_KEY --broadcast --rpc-url $ETHEREUM_HOST --sig "deploy(address,address,address,address,string,bool)" \
   $DEPLOYER_ADDRESS \
   $SAFE_ADDRESS \
   $FAUCET_CONTROLLER \
